@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex's HomePage</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+      }
+
+      header a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      div {
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        margin-top: 10px;
+      }
+
+      .section {
+        padding: 100px 20px;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section_hobby {
+        padding: 100px 20px;
+        height: 1200px;
+      }
+
+      .button {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .button_img {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      .img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#main">Main</a>
+      <a href="#profile">Profile</a>
+      <a href="#hobby">Hobby</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="section" style="background: gold">
+      <h2>Main</h2>
+      <img id="main_img" src="images/IMG_0749.JPG" alt="메인" width="300px" />
+      <p>Great한 개발자 Alex의 공간에 오신걸 환영합니다</p>
+    </div>
+
+    <!-- Profile -->
+    <div id="profile" class="section" style="background: lightgreen">
+      <h2>Profile</h2>
+      <img src="images/alex.jpg" alt="alex" width="300px" />
+      <p>
+        베스파를 좋아하고 🛵<br />야구를 좋아하며 ⚾️⌨<br />키보드를 사랑하는
+        ⌨️<br />개발자 Alex입니다 🧑🏻‍💻
+      </p>
+    </div>
+
+    <!-- Hobby -->
+    <div id="hobby" class="section_hobby" style="background-color: pink">
+      <h2>Hobby</h2>
+      <h3>저의 취미를 소개합니다</h3>
+      <ol>
+        <li>
+          <p>바람을 가르며 스쿠터 타기</p>
+          <img src="images/vespa.jpg" alt="베스파" width="200px" />
+        </li>
+        <li>
+          <p>치고 받고 던지고 신나게 달리며 야구하기</p>
+          <img src="images/baseball.jpg" alt="야구" width="200px" />
+        </li>
+        <li>
+          <p>개발자의 친구 키보드 수집하기</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dNGByM7DCck?si=uCK-Ro7KVNQz9UIh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="section" style="background: skyblue">
+      <h2>Portfolio</h2>
+      <img src="images/com1.jpg" alt="포트폴리오" width="300px" />
+      <div>
+        <div class="button">
+          <a href="https://github.com/finestQ-alex">
+            <button class="button_img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4vl0mRbqewDAXJfvVM1jLvP9ygd_-_KdXg&s"
+                alt="깃허브"
+                width="50px"
+                class="img"
+              /></button
+          ></a>
+
+          <span>깃허브 에서 프로젝트 소스코드 보기</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="button">
+          <a href="https://velog.io/@finestq_alex/posts">
+            <button class="button_img">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="벨로그"
+                width="50px"
+                class="img"
+              /></button
+          ></a>
+
+          <span>벨로그에서 프로젝트 진행과정 살펴보기</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="button">
+          <a href="https://blog.naver.com/linc_kenn_washington">
+            <button class="button_img">
+              <img
+                src="https://i.namu.wiki/i/2xvP6wyGcTTTXoDxiaAgb0W59cfwgtSDpIsjyf5rocofoqx6FvykawHd5UkCDzIy4QJ36_2wmOk6_-6I3dZSTjmvw8A9okHx2rzTLACthuxbCJBlmu7cLCas39aEu2Hq4PZlDxEWkbfQE82T3_-0iw.svg"
+                alt="깃허브"
+                width="50px"
+                class="img"
+              /></button
+          ></a>
+
+          <span>네이버 블로그에서도 볼수 있어요</span>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="section" style="background: lemonchiffon">
+      <h2>Contact</h2>
+      <p>Email: finestq.alex@gmail.com</p>
+      <p>문의는 이메일로 주세요</p>
+
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A582891993&color=%2300aabb&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      ></iframe>
+      <div
+        style="
+          font-size: 10px;
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-family:
+            Interstate,
+            Lucida Grande,
+            Lucida Sans Unicode,
+            Lucida Sans,
+            Garuda,
+            Verdana,
+            Tahoma,
+            sans-serif;
+          font-weight: 100;
+        "
+      >
+        <a
+          href="https://soundcloud.com/user-220401454-471923372"
+          title="W3STIN"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >W3STIN</a
+        >
+        ·
+        <a
+          href="https://soundcloud.com/user-220401454-471923372/gangnam-club-mix"
+          title="아레나 힙합존 (힙존)에서 사람들에게 반응 좋은 힙합 믹스! / Gangnam Club MIX"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >아레나 힙합존 (힙존)에서 사람들에게 반응 좋은 힙합 믹스! / Gangnam
+          Club MIX</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
